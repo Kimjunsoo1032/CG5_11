@@ -14,7 +14,7 @@ public class PostEffectRenderFeature : ScriptableRendererFeature
         renderPass_.renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing;
     }
 
-    public override void AddRenderPasses(ScriptableRenderer renderer,ref RenderingData renderingData)
+    public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {
         if (renderPass_ != null)
         {
