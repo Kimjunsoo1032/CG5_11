@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1788752166688424519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a8aba8d5386c047a769be0e4720b42, type: 3}
+  m_Name: ClippingCheckRenderFeature
+  m_EditorClassIdentifier: Assembly-CSharp::ClippingCheckRenderFeature
+  m_Active: 1
+  postEffectMaterial_: {fileID: 2100000, guid: f0a641dc5b0b03e4c988542dc8c0a11b, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,10 +41,12 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 7833122117494664109}
   - {fileID: 3262756500789592031}
-  m_RendererFeatureMap: ad6b866f10d7b46cdfff282ac0a3472d
+  - {fileID: 9077336835571425855}
+  - {fileID: -1788752166688424519}
+  m_RendererFeatureMap: ad6b866f10d7b46cdfff282ac0a3472d3fa2cd16c22df97db97d53b161132de7
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
-  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
+  postProcessData: {fileID: 0}
   m_AssetVersion: 3
   m_PrepassLayerMask:
     serializedVersion: 2
@@ -96,3 +112,17 @@ MonoBehaviour:
     BlurQuality: 0
     Falloff: 100
     SampleCount: -1
+--- !u!114 &9077336835571425855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d603c376cd9d85478c9b327b50bfaea, type: 3}
+  m_Name: ToneMappingRenderFeature
+  m_EditorClassIdentifier: Assembly-CSharp::ToneMappingRenderFeature
+  m_Active: 1
+  postEffectMaterial_: {fileID: 0}
