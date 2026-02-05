@@ -10171,3 +10171,771 @@ Memory consumption went from 160.7 MB to 154.8 MB.
 Total: 15.070800 ms (FindLiveObjects: 0.764900 ms CreateObjectMapping: 0.854100 ms MarkObjects: 8.459200 ms  DeleteObjects: 4.990700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2407.400839 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/0_Decal Simple.shadergraph
+  artifactKey: Guid(39144937a5efe954dac51acbbe54157e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/0_Decal Simple.shadergraph using Guid(39144937a5efe954dac51acbbe54157e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '998ca8b9313f46f7a0a65130e84dca2d') in 1.5563533 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf
+  artifactKey: Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf using Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: 'f7142e159225a2bd5e6c757f6f1ae9eb') in 0.0945638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Emissive.mat
+  artifactKey: Guid(92f845725428c954b878da352f657fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Editor/SceneTemplates/Materials/Emissive.mat using Guid(92f845725428c954b878da352f657fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '9ebd4699fe6e5bbab96097179f7e8673') in 3.7644911 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf
+  artifactKey: Guid(19a9abb883540be48b75b951a927ae03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf using Guid(19a9abb883540be48b75b951a927ae03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '728e5170b2aa4cae783d7193278dfb58') in 0.1180189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/BuiltIn/BuiltIn Lit Basic.shadergraph
+  artifactKey: Guid(2019d78ad3d1c5c4a8d309a857ca449f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/BuiltIn/BuiltIn Lit Basic.shadergraph using Guid(2019d78ad3d1c5c4a8d309a857ca449f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: 'a6f6ca6e0f60b572bc753c56658bece1') in 0.3760501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf
+  artifactKey: Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf using Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '1fd8a316e6506677ac0ecd59a6d03d01') in 0.119048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Mesh2D-Unlit-Default.mat
+  artifactKey: Guid(71942363c5608a64bb62421349d39c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Mesh2D-Unlit-Default.mat using Guid(71942363c5608a64bb62421349d39c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: 'eb57cb89d3398aec2541177d68afedb7') in 0.0433303 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph
+  artifactKey: Guid(cbd3e1cc4ae141c42a30e33b4d666a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Nature/SpeedTree9_URP.shadergraph using Guid(cbd3e1cc4ae141c42a30e33b4d666a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '64760a6329b23ee0fbada4a4d1adcdaa') in 5.4203823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/BuiltIn/BuiltIn Unlit Basic.shadergraph
+  artifactKey: Guid(9618d41bb71f74048bb6cace8785b93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/BuiltIn/BuiltIn Unlit Basic.shadergraph using Guid(9618d41bb71f74048bb6cace8785b93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: 'f855d6754921ef880ee501ffc19e53a9') in 0.2500934 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Mesh2D-Lit-Default.mat
+  artifactKey: Guid(9452ae1262a74094f8a68013fbcd1834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Mesh2D-Lit-Default.mat using Guid(9452ae1262a74094f8a68013fbcd1834) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: 'aa568f15f534550cea805a39aecc5ef2') in 0.025065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf
+  artifactKey: Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf using Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '0eae130cc4accf34c3e91a043f95fc39') in 0.0236759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/0_Lit Basic.shadergraph
+  artifactKey: Guid(a2407126e3372f64cacb75ed466a5621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.shadergraph/GraphTemplates/Cross Pipeline/0_Lit Basic.shadergraph using Guid(a2407126e3372f64cacb75ed466a5621) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '820db5fa4bf0bb4f5533950370c6f4c8') in 5.1746633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph
+  artifactKey: Guid(9b4e681081e2b4c469111bb649e2f7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Decal.shadergraph using Guid(9b4e681081e2b4c469111bb649e2f7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '22bcc3d046bf00ab41e19a4b5390b62c') in 0.0181326 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Decal.mat
+  artifactKey: Guid(31d0dcc6f2dd4e4408d18036a2c93862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Decal.mat using Guid(31d0dcc6f2dd4e4408d18036a2c93862) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '2c5912a1bf190bb5a5ea04558b227ee1') in 0.0153147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpriteMask-Default.mat
+  artifactKey: Guid(15d0c3709176029428a0da2f8cecf0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpriteMask-Default.mat using Guid(15d0c3709176029428a0da2f8cecf0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '03b1a430ec471eaf23e08ccfaca7b577') in 0.0169934 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/SamplesFixture.fbx
+  artifactKey: Guid(b28fa67a0ff82c5478f27368dc627683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/RenderPipelineResources/Mesh/SamplesFixture.fbx using Guid(b28fa67a0ff82c5478f27368dc627683) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview (UnityEditor.GameObjectInspector/PreviewData)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '4e3401f630784b5590fd8736fbd59283') in 0.3471074 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingWireframe.mat
+  artifactKey: Guid(9875a245ac49007498213638a307faa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingWireframe.mat using Guid(9875a245ac49007498213638a307faa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '2d97d6b031ae06a5d6c846d9efeb752c') in 0.040317 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph
+  artifactKey: Guid(80aa867ac363ac043847b06ad71604cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/AutodeskInteractive/AutodeskInteractiveMasked.shadergraph using Guid(80aa867ac363ac043847b06ad71604cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The render pass ToneMappingRenderPass does not have an implementation of the RecordRenderGraph method. Please implement this method, or consider turning on Compatibility Mode (RenderGraph disabled) in the menu Edit > Project Settings > Graphics > URP. Otherwise the render pass will have no effect. For more information, refer to https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/customizing-urp.html.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+UnityEngine.Rendering.Universal.ScriptableRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs:756)
+ToneMappingRenderPass:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ContextContainer) (at Assets/ToneMappingRenderPass.cs:18)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPassesInEventRange (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1306)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1325)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordCustomRenderGraphPasses (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.Universal.RenderPassEvent) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1330)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnAfterRendering (UnityEngine.Rendering.RenderGraphModule.RenderGraph,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:1370)
+UnityEngine.Rendering.Universal.UniversalRenderer:OnRecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRendererRenderGraph.cs:653)
+UnityEngine.Rendering.Universal.ScriptableRenderer:RecordRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/ScriptableRenderer.cs:1259)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RecordAndExecuteRenderGraph (UnityEngine.Rendering.RenderGraphModule.RenderGraph,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderer,UnityEngine.Rendering.CommandBuffer,UnityEngine.Camera,UnityEngine.Rendering.RenderGraphModule.RenderTextureUVOriginStrategy) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipelineRenderGraph.cs:23)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:902)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:720)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:695)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/UniversalRenderPipeline.cs:512)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEngine.Camera:Render ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Runtime/Passes/ScriptableRenderPass.cs Line: 756)
+
+ -> (artifact id: '18513e2bf1a857a925cc9b40f057f4f1') in 5.2354522 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
