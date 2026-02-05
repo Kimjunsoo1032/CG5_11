@@ -4,17 +4,26 @@ using UnityEngine.Rendering.Universal;
 public class PostEffectRenderFeature : ScriptableRendererFeature
 {
     [SerializeField]
-    private Material postEffectMaterial_;
+    private Material blurMaterial_;
+
+    [SerializeField]
+    private Material passThroughMaterial_;
 
     private PostEffectRenderPass renderPass_;
 
     public override void Create()
     {
-        renderPass_ = new PostEffectRenderPass(postEffectMaterial_);
-        renderPass_.renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing;
+        renderPass_ = new PostEffectRenderPass(
+            blurMaterial_,
+            passThroughMaterial_);
+
+        renderPass_.renderPassEvent =
+            RenderPassEvent.BeforeRenderingPostProcessing;
     }
 
-    public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
+    public override void AddRenderPasses(
+        ScriptableRenderer renderer,
+        ref RenderingData renderingData)
     {
         if (renderPass_ != null)
         {

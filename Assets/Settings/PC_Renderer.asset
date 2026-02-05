@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a8aba8d5386c047a769be0e4720b42, type: 3}
   m_Name: ClippingCheckRenderFeature
   m_EditorClassIdentifier: Assembly-CSharp::ClippingCheckRenderFeature
-  m_Active: 1
+  m_Active: 0
   postEffectMaterial_: {fileID: 2100000, guid: f0a641dc5b0b03e4c988542dc8c0a11b, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_RendererFeatureMap: ad6b866f10d7b46cdfff282ac0a3472d3fa2cd16c22df97db97d53b161132de7
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
-  postProcessData: {fileID: 0}
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   m_AssetVersion: 3
   m_PrepassLayerMask:
     serializedVersion: 2

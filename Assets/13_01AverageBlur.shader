@@ -1,56 +1,57 @@
-Shader "Custom/13_01AverageBlur"
+﻿Shader "Custom/13_01AverageBlur"
 {
     Properties
     {
-        [MainColor] _BaseColor("Base Color", Color) = (1, 1, 1, 1)
-        [MainTexture] _BaseMap("Base Map", 2D) = "white" {}
+        _StepWidth ("ブラー密度", Range(0, 0.1)) = 0.01
+        _StepNums  ("ブラー強度", Range(0, 5))   = 3
     }
 
     SubShader
     {
-        Tags { "RenderType" = "Opaque" "RenderPipeline" = "UniversalPipeline" }
+        Tags { "RenderPipeline" = "UniversalPipeline" }
 
         Pass
         {
             HLSLPROGRAM
-
-            #pragma vertex vert
-            #pragma fragment frag
+            #pragma vertex Vert
+            #pragma fragment Frag
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-
-            struct Attributes
-            {
-                float4 positionOS : POSITION;
-                float2 uv : TEXCOORD0;
-            };
-
-            struct Varyings
-            {
-                float4 positionHCS : SV_POSITION;
-                float2 uv : TEXCOORD0;
-            };
-
-            TEXTURE2D(_BaseMap);
-            SAMPLER(sampler_BaseMap);
+            #include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
 
             CBUFFER_START(UnityPerMaterial)
-                half4 _BaseColor;
-                float4 _BaseMap_ST;
+                float _StepWidth;
+                float _StepNums;
             CBUFFER_END
 
-            Varyings vert(Attributes IN)
+            half4 Frag(Varyings IN) : SV_Target
             {
-                Varyings OUT;
-                OUT.positionHCS = TransformObjectToHClip(IN.positionOS.xyz);
-                OUT.uv = TRANSFORM_TEX(IN.uv, _BaseMap);
-                return OUT;
-            }
+                half4 output = half4(0,0,0,0);
+                float loopCount = 0.0;
 
-            half4 frag(Varyings IN) : SV_Target
-            {
-                half4 color = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, IN.uv) * _BaseColor;
-                return color;
+                float stepNums = floor(_StepNums);
+                float2 margin = _BlitTexture_TexelSize.xy * 0.5;
+
+                for (float y = -stepNums * 0.5; y <= stepNums * 0.5; y += 1.0)
+                {
+                    for (float x = -stepNums * 0.5; x <= stepNums * 0.5; x += 1.0)
+                    {
+                        float2 uv = IN.texcoord + float2(x, y) * _StepWidth;
+                        uv = clamp(uv, margin, 1.0 - margin);
+
+                        output += SAMPLE_TEXTURE2D(
+                            _BlitTexture,
+                            sampler_LinearClamp,
+                            uv
+                        );
+
+                        loopCount += 1.0;
+                    }
+                }
+
+                output /= loopCount;
+                output.a = 1.0;
+                return output;
             }
             ENDHLSL
         }
